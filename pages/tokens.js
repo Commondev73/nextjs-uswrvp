@@ -29,47 +29,47 @@ const Tokens = () => {
 
   const getImage = (url) => {
     // fix sever block
-    // const baseUrl = [
-    //   "https://cloudflare-ipfs.com",
-    //   "https://benjaminkor2.infura-ipfs.io",
-    // ];
-    // return `${sample(baseUrl)}/${url.replace("ipfs://", "ipfs/")}`;
-    return null;
+    const baseUrl = [
+      "https://cloudflare-ipfs.com",
+      "https://benjaminkor2.infura-ipfs.io",
+    ];
+    return `${sample(baseUrl)}/${url.replace("ipfs://", "ipfs/")}`;
+    // return null;
   };
 
-  const setColorAttributes = (atr) => {
-    let color = "";
-    switch (atr) {
-      case "Legendary":
-        color = styles.attributeLegendary;
-        break;
-      case "Background":
-        color = styles.attributeBackground;
-        break;
-      case "Body":
-        color = styles.attributeBody;
-        break;
-      case "Mouth":
-        color = styles.attributeMouth;
-        break;
-      case "Face":
-        color = styles.attributeFace;
-        break;
-      case "Hand":
-        color = styles.attributeHand;
-        break;
-      case "Trait Count":
-        color = styles.attributeTraitCount;
-        break;
-      case "Head":
-        color = styles.attributeHead;
-        break;
-      default:
-        color = null;
-        break;
-    }
-    return color;
-  };
+  // const setColorAttributes = (atr) => {
+  //   let color = "";
+  //   switch (atr) {
+  //     case "Legendary":
+  //       color = styles.attributeLegendary;
+  //       break;
+  //     case "Background":
+  //       color = styles.attributeBackground;
+  //       break;
+  //     case "Body":
+  //       color = styles.attributeBody;
+  //       break;
+  //     case "Mouth":
+  //       color = styles.attributeMouth;
+  //       break;
+  //     case "Face":
+  //       color = styles.attributeFace;
+  //       break;
+  //     case "Hand":
+  //       color = styles.attributeHand;
+  //       break;
+  //     case "Trait Count":
+  //       color = styles.attributeTraitCount;
+  //       break;
+  //     case "Head":
+  //       color = styles.attributeHead;
+  //       break;
+  //     default:
+  //       color = null;
+  //       break;
+  //   }
+  //   return color;
+  // };
 
   return (
     <Layout>
@@ -121,7 +121,7 @@ const Tokens = () => {
                     <div key={i} className={styles.tokensAttributeLists}>
                       {!isEmpty(data.attributes) &&
                         data.attributes.map((atr, i) => (
-                          <span className={setColorAttributes(atr.trait_type)}>
+                          <span>
                             {atr.trait_type}:{atr.value}
                           </span>
                         ))}
