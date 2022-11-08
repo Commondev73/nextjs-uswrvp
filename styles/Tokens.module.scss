@@ -41,14 +41,7 @@ $borderRadius: 0.25rem;
         border-radius: $borderRadius;
         color: white;
         padding: 0.25rem;
-        background-image: linear-gradient(
-          to right top,
-          #dc27b4,
-          #cd19be,
-          #b912ca,
-          #a016d6,
-          #7e20e2
-        );
+        background-image: var(--gradient-primary);
       }
     }
 
@@ -80,98 +73,42 @@ $borderRadius: 0.25rem;
         }
 
         > :nth-child(1) {
-          background-image: linear-gradient(
-            to right top,
-            #13aa83,
-            #39b278,
-            #56b96c,
-            #72c05e,
-            #8fc54f
-          );
+          background-image: var(--gradient-trait-1);
           color: white;
         }
 
         > :nth-child(2) {
-          background-image: linear-gradient(
-            to right top,
-            #ed1661,
-            #f62a52,
-            #fb3d42,
-            #fe5031,
-            #fd631b
-          );
+          background-image: var(--gradient-trait-2);
           color: white;
         }
 
         > :nth-child(3) {
-          background-image: linear-gradient(
-            to right top,
-            #fb4e1b,
-            #fb6816,
-            #fa7e17,
-            #f8921e,
-            #f6a42b
-          );
+          background-image: var(--gradient-trait-3);
           color: white;
         }
 
         > :nth-child(4) {
-          background-image: linear-gradient(
-            to right top,
-            #a02e5c,
-            #8c2e68,
-            #753170,
-            #593473,
-            #3a3672
-          );
+          background-image: var(--gradient-trait-4);
           color: white;
         }
 
         > :nth-child(5) {
-          background-image: linear-gradient(
-            to right top,
-            #35bed9,
-            #00b2e0,
-            #00a4e5,
-            #1d94e6,
-            #4e82e0
-          );
+          background-image: var(--gradient-trait-5);
           color: white;
         }
 
         > :nth-child(6) {
-          background-image: linear-gradient(
-            to right top,
-            #151e2d,
-            #182333,
-            #1a273a,
-            #1d2c40,
-            #1f3147
-          );
+          background-image: var(--gradient-trait-6);
           color: white;
         }
 
         > :nth-child(7) {
-          background-image: linear-gradient(
-            to right top,
-            #16ab83,
-            #39b378,
-            #56ba6b,
-            #72c05d,
-            #8ec54e
-          );
+          background-image: var(--gradient-trait-1);
           color: white;
         }
 
         > :nth-child(8) {
-          background-image: linear-gradient(
-            to right top,
-            #ed1661,
-            #f62a52,
-            #fb3d42,
-            #fe5031,
-            #fd631b
-          );
+          background-image: var(--gradient-trait-2);
           color: white;
         }
       }
