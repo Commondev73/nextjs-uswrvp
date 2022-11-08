@@ -28,7 +28,11 @@ const Tokens = () => {
     "https://media.discordapp.net/attachments/903497492878999602/1006808141389910046/buynow-button.png";
 
   const getImage = (url) => {
-    // const baseUrl = ["https://cloudflare-ipfs.com"];
+    // fix sever block
+    // const baseUrl = [
+    //   "https://cloudflare-ipfs.com",
+    //   "https://benjaminkor2.infura-ipfs.io",
+    // ];
     // return `${sample(baseUrl)}/${url.replace("ipfs://", "ipfs/")}`;
     return null;
   };
