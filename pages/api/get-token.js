@@ -10,5 +10,5 @@ export default async (req, res) => {
     jsonDirectory + "/collection-payload.json",
     "utf8",
   );
-  res.status(200).json(fileContents);
+  res.status(200).json(JSON.parse(fileContents));
 };
