@@ -14,7 +14,9 @@ $borderRadius: 0.25rem;
 
     td,
     th {
-      padding: 0.5rem;
+      white-space: nowrap;
+      padding: 0.5rem 1rem;
+      text-align: left;
     }
 
     tr:nth-child(even) {
@@ -22,11 +24,12 @@ $borderRadius: 0.25rem;
     }
 
     .tokensId {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
+      span {
+        margin-left: 1rem;
+      }
 
       img {
+        vertical-align: middle;
         border-radius: $borderRadius;
         width: 35px;
         height: 35px;
@@ -49,12 +52,21 @@ $borderRadius: 0.25rem;
       }
     }
 
+    .tokensBuyNow {
+      img {
+        border-radius: $borderRadius;
+        object-fit: cover;
+        width: 115px;
+        height: 35px;
+      }
+    }
+
     .tokensLinks {
       display: flex;
       gap: 0.35rem;
       svg {
         width: 20px;
-        height: 20px;
+        height: 35px;
       }
     }
     .tokensAttributes {
@@ -63,7 +75,6 @@ $borderRadius: 0.25rem;
         gap: 0.25rem;
 
         span {
-          white-space: nowrap;
           border-radius: $borderRadius;
           padding: 0.25rem;
         }

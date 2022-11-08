@@ -90,11 +90,7 @@ const Tokens = () => {
               data.map((data, i) => (
                 <tr key={i}>
                   <th className={styles.tokensId}>
-                    {data.image && (
-                      <div>
-                        <img src={getImage(data.image)} />
-                      </div>
-                    )}
+                    {data.image && <img src={getImage(data.image)} />}
                     <span>#{data.id}</span>
                   </th>
                   <th className={styles.tokensRank}>
