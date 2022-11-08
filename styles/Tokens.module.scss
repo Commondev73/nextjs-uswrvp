@@ -17,6 +17,7 @@ $borderRadius: 0.25rem;
         height: 35px;
       }
     }
+
     .tokensRank {
       span {
         border-radius: $borderRadius;
@@ -30,6 +31,123 @@ $borderRadius: 0.25rem;
           #a016d6,
           #7e20e2
         );
+      }
+    }
+
+    .tokensLinks {
+      display: flex;
+      gap: 0.35rem;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .tokensAttributes {
+      .tokensAttributeLists {
+        display: flex;
+        gap: 0.25rem;
+
+        span {
+          border-radius: $borderRadius;
+          background-color: aqua;
+          padding: 0.25rem;
+        }
+
+        .attributeLegendary {
+          background-image: linear-gradient(
+            to right top,
+            #13aa83,
+            #39b278,
+            #56b96c,
+            #72c05e,
+            #8fc54f
+          );
+          color: white;
+        }
+
+        .attributeBackground {
+          background-image: linear-gradient(
+            to right top,
+            #ed1661,
+            #f62a52,
+            #fb3d42,
+            #fe5031,
+            #fd631b
+          );
+          color: white;
+        }
+
+        .attributeBody {
+          background-image: linear-gradient(
+            to right top,
+            #fb4e1b,
+            #fb6816,
+            #fa7e17,
+            #f8921e,
+            #f6a42b
+          );
+          color: white;
+        }
+
+        .attributeMouth {
+          background-image: linear-gradient(
+            to right top,
+            #a02e5c,
+            #8c2e68,
+            #753170,
+            #593473,
+            #3a3672
+          );
+          color: white;
+        }
+
+        .attributeFace {
+          background-image: linear-gradient(
+            to right top,
+            #35bed9,
+            #00b2e0,
+            #00a4e5,
+            #1d94e6,
+            #4e82e0
+          );
+          color: white;
+        }
+
+        .attributeHand {
+          background-image: linear-gradient(
+            to right top,
+            #151e2d,
+            #182333,
+            #1a273a,
+            #1d2c40,
+            #1f3147
+          );
+          color: white;
+        }
+
+        .attributeTraitCount {
+          background-image: linear-gradient(
+            to right top,
+            #16ab83,
+            #39b378,
+            #56ba6b,
+            #72c05d,
+            #8ec54e
+          );
+          color: white;
+        }
+
+        .attributeHead {
+          background-image: linear-gradient(
+            to right top,
+            #ed1661,
+            #f62a52,
+            #fb3d42,
+            #fe5031,
+            #fd631b
+          );
+          color: white;
+        }
       }
     }
   }

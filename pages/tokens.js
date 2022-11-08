@@ -33,6 +33,40 @@ const Tokens = () => {
     return null;
   };
 
+  const setColorAttributes = (atr) => {
+    let color = "";
+    switch (atr) {
+      case "Legendary":
+        color = styles.attributeLegendary;
+        break;
+      case "Background":
+        color = styles.attributeBackground;
+        break;
+      case "Body":
+        color = styles.attributeBody;
+        break;
+      case "Mouth":
+        color = styles.attributeMouth;
+        break;
+      case "Face":
+        color = styles.attributeFace;
+        break;
+      case "Hand":
+        color = styles.attributeHand;
+        break;
+      case "Trait Count":
+        color = styles.attributeTraitCount;
+        break;
+      case "Head":
+        color = styles.attributeHead;
+        break;
+      default:
+        color = null;
+        break;
+    }
+    return color;
+  };
+
   return (
     <Layout>
       <div className={styles.tokensContainer}>
@@ -57,7 +91,7 @@ const Tokens = () => {
                         <img src={getImage(data.image)} />
                       </div>
                     )}
-                    <span>{data.id}</span>
+                    <span>#{data.id}</span>
                   </th>
                   <th className={styles.tokensRank}>
                     <span>{data.rank}</span>
@@ -66,11 +100,29 @@ const Tokens = () => {
                     <img src={imageBuyNow} />
                   </th>
                   <th className={styles.tokensLinks}>
-                    <div>
+                    <a href={data.links.opensea}>
+                      <OpenseaIcon />
+                    </a>
+                    <a href={data.links.looksrare}>
+                      <LooksRareIcon />
+                    </a>
+                    <a href={data.links.x2y2}>
+                      <X2Y2Icon />
+                    </a>
+                    <a href={data.links.etherscan}>
                       <EtherScanIcon />
+                    </a>
+                  </th>
+                  <th className={styles.tokensAttributes}>
+                    <div key={i} className={styles.tokensAttributeLists}>
+                      {!isEmpty(data.attributes) &&
+                        data.attributes.map((atr, i) => (
+                          <span className={setColorAttributes(atr.trait_type)}>
+                            {atr.trait_type}:{atr.value}
+                          </span>
+                        ))}
                     </div>
                   </th>
-                  <th>Traits</th>
                 </tr>
               ))}
           </table>
