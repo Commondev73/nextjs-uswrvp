@@ -1,0 +1,36 @@
+/* your style implementation goes here */
+
+$borderRadius: 0.25rem;
+
+.tokensContainer {
+  padding: 1rem 2rem;
+
+  .tokensTable {
+    .tokensId {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      img {
+        border-radius: $borderRadius;
+        width: 35px;
+        height: 35px;
+      }
+    }
+    .tokensRank {
+      span {
+        border-radius: $borderRadius;
+        color: white;
+        padding: 0.25rem;
+        background-image: linear-gradient(
+          to right top,
+          #dc27b4,
+          #cd19be,
+          #b912ca,
+          #a016d6,
+          #7e20e2
+        );
+      }
+    }
+  }
+}
