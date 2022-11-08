@@ -1,0 +1,24 @@
+.navlist {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  border-bottom: 1px solid #999;
+
+  margin: 0;
+  padding: 1em 2em;
+}
+
+.navitem {
+  margin: 0;
+}
+
+.navitemactive {
+  margin: 0;
+  border-bottom: 2.5px solid black;
+  font-weight: 600;
+}
+
+.navitem > a:hover {
+  border-bottom: 1px solid #666;
+}
