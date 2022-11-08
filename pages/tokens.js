@@ -80,7 +80,7 @@ const Tokens = () => {
         <div className={styles.tokensTable}>
           <table>
             <tr>
-              <th>ID</th>
+              <th className={styles.tokensTableHeaderId}>ID</th>
               <th>Rank(N)</th>
               <th>Buy</th>
               <th>Link</th>
