@@ -5,8 +5,20 @@ $borderRadius: 0.25rem;
 .tokensContainer {
   padding: 1rem 2rem;
 
+  ::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 0.25rem;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: $borderRadius;
+    background: gray;
+  }
+
   .tokensTable {
     overflow-x: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: $borderRadius;
 
     table {
       border-collapse: collapse;
